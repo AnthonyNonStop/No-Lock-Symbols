@@ -1,0 +1,186 @@
+
+<Entities>
+	<Entity name="door_wood_01_locked" type="Door" hideInEditor="true" fogOfWarVisibility="hiddenState" tooltip="@entity_door_flimsy_locked_tooltip" editorAutoHeight="false">
+		<PhysicalParams blocksVision="true"/>
+		<Breakable breakOnDamage="grenade" template="Breakable_Door_Wood"/>
+		<RenderObject3D model="data/models/environment/various/door_wood.khm" diffuseTex="data/models/environment/various/door_wood_01.dds" emissive="1"/>
+		<RenderObject3D model="data/models/environment/various/door_wood_unlocked_symbol.khm" diffuseColor="e6d4c0" skipSSAO="true" skipGOSSAO="true" skipCastShadows="true" disableLighting="true"/>
+
+		<Door
+			type="normal"
+
+			locked="true"
+			unlockedSymbolMesh="data/models/environment/various/door_wood_unlocked_symbol.khm"
+			openAngle="170"
+			openCloseTimeMsec="900"
+
+			lockPickTimeMsec="10000"
+			breachTimeMsec="2000"
+			hammerHitsNeeded="1"
+
+			sfxOpen="door_open"
+			sfxClose="door_close"
+			sfxKick="door_kick"
+			sfxCrowbar="crowbar_use"
+			sfxBreakHammer="door_ram">
+		</Door>
+	</Entity>
+
+	<Entity name="door_flat_01_locked" type="Door" hideInEditor="true" fogOfWarVisibility="hiddenState" tooltip="@entity_door_strong_locked_tooltip" editorAutoHeight="false">
+		<PhysicalParams blocksVision="true"/>
+		<Breakable template="Breakable_Door_Flat_Wood"/>
+		<RenderObject3D model="data/models/environment/various/door_flat_01.khm" diffuseTex="data/models/environment/various/door_flat_01.dds" emissive="1"/>
+		<RenderObject3D model="data/models/environment/various/door_flat_01_symbol.khm" diffuseColor="e6d4c0" skipSSAO="true" skipGOSSAO="true" skipCastShadows="true" disableLighting="true"/>
+
+		<Door
+			type="normal"
+
+			locked="true"
+			unlockedSymbolMesh="data/models/environment/various/door_flat_01_symbol.khm"
+			openAngle="170"
+			openCloseTimeMsec="900"
+
+			lockPickTimeMsec="10000"
+			breachTimeMsec="4000"
+			hammerHitsNeeded="1"
+
+			sfxOpen="door_open"
+			sfxClose="door_close"
+			sfxKick="door_kick"
+			sfxCrowbar="crowbar_use"
+			sfxBreakHammer="door_ram">
+		</Door>
+	</Entity>
+
+	<Entity name="gate_poor_01_locked" type="Door" hideInEditor="true" fogOfWarVisibility="hiddenState" tooltip="@entity_door_gate_locked_tooltip" editorAutoHeight="false">
+		<PhysicalParams blocksVision="true"/>
+		<Breakable template="Breakable_Metal"/>
+		<RenderObject3D model="data/models/environment/various/gate_poor_01.khm" diffuseTex="data/models/environment/various/gate_poor.dds" />
+		<RenderObject3D model="data/models/environment/various/gate_poor_01_symbol.khm" diffuseColor="e6d4c0" skipSSAO="true" skipGOSSAO="true" skipCastShadows="true" disableLighting="true" />
+
+		<Door
+			type="normal"
+
+			locked="true"
+			unlockedSymbolMesh="data/models/environment/various/gate_poor_01_symbol.khm"
+			openAngle="170"
+			openCloseTimeMsec="1400"
+
+			lockPickTimeMsec="10000"
+			breachTimeMsec="4000"
+			hammerHitsNeeded="1"
+
+			sfxOpen="door_grate_open"
+			sfxClose="door_grate_close"
+			sfxKick="door_grate_kick"
+			sfxCrowbar="crowbar_use_metal"
+			sfxBreakHammer="door_grate_ram">
+		</Door>
+	</Entity>
+
+	<Entity name="door_grate_01_locked" type="Door" hideInEditor="true" fogOfWarVisibility="hiddenState" tooltip="@entity_door_grating_locked_tooltip"  editorAutoHeight="false">
+		<PhysicalParams blocksVision="false" solid="false"/>
+		<Breakable template="Breakable_Door_Grate"/>
+		<RenderObject3D model="data/models/environment/various/door_grate.khm" diffuseTex="data/models/environment/various/door_grate_01.dds" emissive="1"/>
+		<RenderObject3D model="data/models/environment/various/door_grate_unlocked_symbol.khm" diffuseColor="e6d4c0" skipSSAO="true" skipGOSSAO="true" skipCastShadows="true" disableLighting="true" />
+
+		<Door
+			type="normal"
+
+			locked="true"
+			unlockedSymbolMesh="data/models/environment/various/door_grate_unlocked_symbol.khm"
+			openAngle="170"
+			openCloseTimeMsec="900"
+
+			lockPickTimeMsec="10000"
+			breachTimeMsec="9000"
+			hammerHitsNeeded="1"
+
+			sfxOpen="door_grate_open"
+			sfxClose="door_grate_close"
+			sfxKick="door_grate_kick"
+			sfxCrowbar="crowbar_use_metal"
+			sfxBreakHammer="door_grate_ram">
+		</Door>
+	</Entity>
+
+	<Entity name="door_metal_sheet_locked" type="Door" hideInEditor="true" fogOfWarVisibility="hiddenState" tooltip="@entity_door_gate_locked_tooltip" editorAutoHeight="false">
+		<PhysicalParams blocksVision="true" solid="true"/>
+		<Breakable template="Breakable_Door_Grate"/>
+		<RenderObject3D model="data/models/environment/various/door_metal_sheet.khm" diffuseTex="data/models/environment/various/gate_metal_sheet.dds" emissive="1" />
+		<RenderObject3D model="data/models/environment/various/gate_metal_sheet_symbol.khm" diffuseColor="e6d4c0" skipSSAO="true" skipGOSSAO="true" skipCastShadows="true" disableLighting="true" />
+
+		<Door
+			type="normal"
+
+			locked="true"
+			unlockedSymbolMesh="data/models/environment/various/gate_metal_sheet_symbol.khm"
+			openAngle="170"
+			openCloseTimeMsec="1000"
+
+			lockPickTimeMsec="10000"
+			breachTimeMsec="10000"
+			hammerHitsNeeded="2"
+
+			sfxOpen="door_grate_open"
+			sfxClose="door_grate_close"
+			sfxKick="door_grate_kick"
+			sfxCrowbar="crowbar_use_metal"
+			sfxBreakHammer="door_grate_ram">
+		</Door>
+
+
+	</Entity>
+
+	<Entity name="door_grate_02_locked" type="Door" hideInEditor="true" fogOfWarVisibility="hiddenState" tooltip="@entity_door_grating_locked_tooltip"  editorAutoHeight="false">
+		<PhysicalParams blocksVision="false" solid="false"/>
+		<Breakable template="Breakable_Door_Grate"/>
+		<RenderObject3D model="data/models/environment/various/door_grate_02.khm" diffuseTex="data/models/environment/various/door_grate_02.dds" emissive="1"/>
+		<RenderObject3D model="data/models/environment/various/door_grate_unlocked_symbol.khm" diffuseColor="e6d4c0" skipSSAO="true" skipGOSSAO="true" skipCastShadows="true" disableLighting="true" />
+
+		<Door
+			type="normal"
+
+			locked="true"
+			unlockedSymbolMesh="data/models/environment/various/door_grate_unlocked_symbol.khm"
+			openAngle="170"
+			openCloseTimeMsec="900"
+
+			lockPickTimeMsec="10000"
+			breachTimeMsec="9000"
+			hammerHitsNeeded="1"
+
+			sfxOpen="door_grate_open"
+			sfxClose="door_grate_close"
+			sfxKick="door_grate_kick"
+			sfxCrowbar="crowbar_use_metal"
+			sfxBreakHammer="door_grate_ram">
+		</Door>
+	</Entity>
+
+	<Entity name="gate_metal_sheet_locked" type="Door" hideInEditor="true" fogOfWarVisibility="hiddenState" tooltip="@entity_door_gate_locked_tooltip"  editorAutoHeight="false">
+		<PhysicalParams blocksVision="true" solid="true"/>
+		<Breakable template="Breakable_Door_Grate"/>
+		<RenderObject3D model="data/models/environment/various/gate_metal_sheet.khm" diffuseTex="data/models/environment/various/gate_metal_sheet.dds" emissive="1"/>
+		<RenderObject3D model="data/models/environment/various/gate_metal_sheet_symbol.khm" diffuseColor="e6d4c0" skipSSAO="true" skipGOSSAO="true" skipCastShadows="true" disableLighting="true" />
+
+		<Door
+			type="normal"
+
+			locked="true"
+			unlockedSymbolMesh="data/models/environment/various/gate_metal_sheet_symbol.khm"
+			openAngle="170"
+			openCloseTimeMsec="1000"
+
+			lockPickTimeMsec="10000"
+			breachTimeMsec="10000"
+			hammerHitsNeeded="2"
+
+			sfxOpen="door_grate_open"
+			sfxClose="door_grate_close"
+			sfxKick="door_grate_kick"
+			sfxCrowbar="crowbar_use_metal"
+			sfxBreakHammer="door_grate_ram">
+		</Door>
+	</Entity>
+</Entities>

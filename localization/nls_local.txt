@@ -1,0 +1,9 @@
+Thanks to "the one who asked" on the DK Server for this because i didnt think of it
+
+@entity_door_strong_locked_tooltip=Reinforced Door
+@entity_door_flimsy_locked_tooltip=Flimsy Door
+@entity_door_gate_locked_tooltip=Sheet Metal Gate
+@entity_door_grating_locked_tooltip=Grating Door
+@entity_door_sliding_blocked_tooltip=Door
+@entity_door_locked=
+@entity_door_padlocked=
